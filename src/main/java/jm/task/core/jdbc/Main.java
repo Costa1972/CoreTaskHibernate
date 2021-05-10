@@ -17,6 +17,8 @@ public class Main {
         userService.saveUser("Constantin", "Simonov", (byte) 27);
         System.out.println(userService.getAllUsers());
         userService.saveUser("Maria", "Osipova", (byte) 19);
+        userService.removeUserById(1L);
+        System.out.println(userService.getAllUsers());
 //        userService.cleanUsersTable();
 //        userService.cleanUsersTable();
     }
